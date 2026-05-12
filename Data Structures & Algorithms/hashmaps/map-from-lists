@@ -1,0 +1,7 @@
+lent=int(input("enter length of lists: " ))
+keys=input(f"enter space separated keys of length {lent} :").split(" ")
+values=input(f"enter space separated keys of length {lent} :").split(" ")
+hmap={}
+for i in range(lent):
+    hmap[keys[i]]=values[i]
+print(hmap)
