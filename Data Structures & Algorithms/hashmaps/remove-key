@@ -1,0 +1,9 @@
+car = {"brand": "Toyota", "model": "Camry", "year": 2022, "color": "blue"}
+keys= input("enter the key to be removed: ")
+car.pop(keys)
+print(car)
+check= input("enter key to be searched: ")
+if check in car:
+    print("exists")
+else:
+    print("NA")
