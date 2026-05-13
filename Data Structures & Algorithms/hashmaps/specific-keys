@@ -1,0 +1,7 @@
+user = {"id": 42, "username": "jdoe",
+"email": "jdoe@example.com", "password": "s3cr3t", "joined": "2021-03-15"}
+hmap={}
+inp= input("space separated keys: ").split(" ")
+for i in range(len(inp)):
+    hmap[inp[i]]=user[inp[i]]
+print(hmap)
