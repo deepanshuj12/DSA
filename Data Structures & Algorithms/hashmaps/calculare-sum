@@ -1,0 +1,5 @@
+expenses = {"rent": 1200, "food": 300, "transport": 150, "utilities": 200}
+c=0
+for i in expenses:
+    c=c+expenses[i]
+print(c)
