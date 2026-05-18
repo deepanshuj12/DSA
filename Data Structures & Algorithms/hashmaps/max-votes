@@ -1,0 +1,12 @@
+votes = ['john','johnny','jackie','johnny','john','jackie',
+'jamie','jamie','john','johnny','jamie','johnny','john']
+hmap={}
+for i in range(len(votes)):
+    hmap[votes[i]]=hmap.get(votes[i],0)+1
+maxx=max(hmap.values())
+winner=""
+for name in hmap:
+    if hmap[name]==maxx:
+        if len(name)>len(winner):
+            winner=name
+print(winner)
