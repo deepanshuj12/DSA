@@ -1,0 +1,9 @@
+from collections import Counter
+a = 'babaodj'
+k=3
+c=Counter(a)
+ar=[]
+for ch in c:
+    if c[ch]==1:
+        ar.append(ch)
+print(ar[k-1] if k<=len(ar) else None)
