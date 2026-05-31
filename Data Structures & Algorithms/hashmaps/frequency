@@ -1,0 +1,6 @@
+a = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
+
+hmap={}
+for i in a:
+    hmap[i]=hmap.get(i,0)+1
+print(hmap)
