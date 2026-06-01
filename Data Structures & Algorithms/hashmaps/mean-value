@@ -1,0 +1,6 @@
+hmap = {"Gfg" : 4, "is" : 7, "Best" : 8, "for" : 6, "Geeks" : 10}
+sums=0
+for i in hmap:
+    sums=sums+hmap[i]
+avg=sums/len(hmap)
+print(avg)
