@@ -1,0 +1,14 @@
+from collections import Counter
+s1 = 'BOBthebuilder'
+s2 = 'fBoOkBIHnfndBthesibuishlider'
+count1=Counter(s1)
+count2=Counter(s2)
+c=0
+for ch in count1:
+    if count1[ch]>count2[ch]:
+        c=1
+        break
+if c==0:
+    print("possible")
+else:
+    print("impossible")
