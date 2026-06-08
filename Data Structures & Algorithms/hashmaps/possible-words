@@ -1,0 +1,11 @@
+d = ["go", "bat", "me", "eat", "goal", "boy", "run","boa"]
+ch = ['e', 'o', 'b', 'a', 'm', 'g', 'l']
+
+for i in d:
+    flag=1
+    for j in i:
+        if j not in ch or i.count(j)> ch.count(j) :
+            flag=0
+            break
+    if flag==1:
+        print (i)
