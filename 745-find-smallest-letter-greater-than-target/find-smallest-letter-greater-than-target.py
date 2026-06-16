@@ -1,14 +1,15 @@
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
-        for i in range(len(letters)):
-            if letters[i]>target:
-                return letters[i]
+        for j in range(len(letters)):
+            if letters[j]>target:
+                return letters[j]
         return letters[0]
 
 
 
 
         # term=''
+        #
         # for i in range(len(letters)):
         #     if ord(letters[i])>ord(target):
         #         term=letters[i]
