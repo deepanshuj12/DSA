@@ -1,8 +1,8 @@
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
-        for j in range(len(letters)):
-            if letters[j]>target:
-                return letters[j]
+        for r in range(len(letters)):
+            if letters[r]>target:
+                return letters[r]
         return letters[0]
 
 
