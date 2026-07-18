@@ -1,0 +1,16 @@
+const arr=[1,0,2,0,1,1,4,5];
+const hmap={}
+for( let i in arr){
+    if (!hmap[arr[i]]){
+        hmap[arr[i]]=1
+        //console.log(arr[i]);
+    }
+    else{
+        hmap[arr[i]]++
+    }
+}
+for (let i in arr){
+    if (hmap[arr[i]]==1){
+        console.log(arr[i])
+    }    
+}
