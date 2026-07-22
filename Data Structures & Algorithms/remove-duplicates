@@ -3,7 +3,6 @@ const hmap={}
 for( let i in arr){
     if (!hmap[arr[i]]){
         hmap[arr[i]]=1
-        //console.log(arr[i]);
     }
     else{
         hmap[arr[i]]++
