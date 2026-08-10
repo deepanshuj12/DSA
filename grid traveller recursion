@@ -1,0 +1,10 @@
+def grid(n,m):
+    if n==1 and m==1:
+        return 1
+    if n==1:
+        return grid(n,m-1)
+    if m==1:
+        return grid(n-1,m)
+    return grid(n-1,m)+grid(n,m-1)
+    
+print(grid(3,3))
