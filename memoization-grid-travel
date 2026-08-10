@@ -1,0 +1,12 @@
+def grid(n,m,memo={}):
+    key=str(n)+ ","+ str(m)
+    if key in memo:
+        return memo[key]
+    if n==1 and m==1:
+        return 1
+    if n==0 or m==0:
+        return 0
+    memo[key]= grid(n-1,m,memo)+grid(n,m-1,memo)
+    return memo[key]
+    
+print(grid(18,18))
