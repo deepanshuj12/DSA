@@ -1,0 +1,16 @@
+def cansum(target, nums,memo={}):
+    if target == 0:
+        return True
+    if target in memo:
+        return memo[target]
+    for i in range(len(nums)):
+        if nums[i] <= target:
+            rem = target - nums[i]
+            if cansum(rem, nums,memo) == True:
+                memo[target]=True
+                return True
+    memo[target]=False
+    return False
+
+
+print(cansum(300, [ 2,6]))
