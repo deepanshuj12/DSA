@@ -1,1 +1,16 @@
-
+def cansum(target, nums):
+    if target==0:
+        return True
+    for num in nums:
+        if num<=target:
+            remainder=target-num
+            result=cansum(remainder,nums)
+            if result==True:
+                return True
+    return False
+    
+print(cansum(7,[2,3]))
+print(cansum(7,[5,3,4,7]))
+print(cansum(7,[2,4]))
+print(cansum(8,[2,3,5]))
+print(cansum(300,[7,14]))
