@@ -9,6 +9,7 @@
 #             newbin=newbin*10+res
 #             binary=binary//10
 #         return  newbin
+#
 class Solution:
     def reverseBits(self, n: int) -> int:
         binary = "{:032b}".format(n)
